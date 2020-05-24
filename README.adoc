@@ -1,0 +1,23 @@
+= Metr Data Parser
+
+This is a small CLI tool that converts link:https://metr.at[] data to a proper, row (item) oriented JSON file.
+The default raw Metr data is horribly structured, and does not feed well into visualization tools like Vega.
+
+== Requirements
+
+You must have Python 3 installed.
+
+== Usage
+
+Simply run
+
+    python3 metr_parser.py input_file.json out_file.json
+
+You can also give the link to a Metr record directly:
+
+    python3 metr_parser.py https://metr.at/r/1q2w3e4r out_file.json
+
+
+== License
+
+link:LICENSE[]
