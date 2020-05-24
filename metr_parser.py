@@ -98,6 +98,9 @@ for i in range(0, record_count):
     if len(data['temperature4']) > 0:
         record['temperature4'] = data['temperature4'][i]
     
+    if len(data['altitude']) > 0:
+        record['altitude'] = data['altitude'][i]
+
     new_data.append(record)
 
 
